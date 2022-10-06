@@ -1,0 +1,131 @@
+.page-hero {
+  padding-top: 153px;
+  padding-bottom: 80px;
+  min-height: 600px;
+  background-color: var(--athens-color);
+  background-position: right -8px top;
+  background-repeat: no-repeat;
+
+  &__breadcrumbs {
+    margin-bottom: 40px;
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 24px;
+    max-width: 600px;
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 130%;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--dark-color);
+
+    &--post {
+      font-size: 64px;
+      line-height: 120%;
+      margin-bottom: 48px;
+    }
+
+    &--small {
+      font-size: 64px;
+      line-height: 120%;
+      text-transform: initial;
+    }
+
+    &--mb {
+      margin-bottom: 60px;
+    }
+
+  }
+
+  &__descr {
+    margin: 0;
+    max-width: 600px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
+    color: var(--storm-color);
+  }
+
+  &--services {
+    background-image: url('../../img/services-hero-bg.png');
+  }
+
+  &--services-inner {
+    background-image: url('../../img/services-inner-hero-bg.png');
+  }
+
+  &--work {
+    background-image: url('../../img/our-work.png');
+  }
+
+  &--work-1 {
+    background-color: var(--light-color);
+    background-image: url('../../img/work-1-bg.png');
+    background-position: right -8px top 48px;
+  }
+
+  &--about {
+    background-image: url('../../img/about-bg.png');
+  }
+
+  &--positions {
+    background-image: url('../../img/positions-bg.png');
+    background-position: right bottom;
+  }
+
+  &--news {
+    background-image: url('../../img/news-bg.png');
+  }
+  &--contacts {
+    background-image: url('../../img/contacts-bg.png');
+  }
+
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__social {
+    svg {
+      fill: var(--storm-color);
+    }
+  }
+
+  .article-meta__item:not(:last-child)::after {
+    right: -17px;
+    height: 16px;
+  }
+
+  .article-meta__item--comments {
+    background-size: 20px 20px;
+  }
+
+  .article-meta__item:not(:last-child) {
+    margin-right: 25px;
+  }
+
+  &__meta {
+    .article-meta__item {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 160%;
+    }
+
+    a.article-meta__item {
+      font-weight: 700;
+      color: var(--accent-color);
+    }
+
+    time.article-meta__item {
+      padding-left: 28px;
+      background-image: url('../../img/time.svg');
+      background-repeat: no-repeat;
+      background-position: left center;
+      background-size: 20px 20px;
+    }
+
+  }
+
+}

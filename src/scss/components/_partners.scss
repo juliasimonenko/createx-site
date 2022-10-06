@@ -1,0 +1,150 @@
+.partners {
+  padding: 80px 0;
+  background-color: var(--athens-color);
+
+  &__bg {
+    background-color: var(--light-color);
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 102px;
+  }
+
+  &__title {
+    margin-bottom: 60px;
+  }
+
+
+  &__item {
+    display: block;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 120px;
+    height: 64px;
+
+    &--one {
+      background-image: url('../../img/partners/partners-1.png');
+      transition: 0.5s;
+    }
+
+    &--one:hover {
+      background-image: url('../../img/partners/client-logo1.png');
+    }
+
+    &--two {
+      background-image: url('../../img/partners/partners-2.png');
+      transition: 0.5s;
+    }
+
+    &--two:hover {
+      background-image: url('../../img/partners/client-logo2.png');
+    }
+
+
+    &--three {
+      background-image: url('../../img/partners/partners-3.png');
+      transition: 0.5s;
+    }
+
+    &--three:hover {
+      background-image: url('../../img/partners/client-logo3.png');
+    }
+
+
+
+    &--four {
+      background-image: url('../../img/partners/partners-4.png');
+      transition: 0.5s;
+    }
+
+    &--four:hover {
+      background-image: url('../../img/partners/client-logo4.png');
+    }
+
+
+
+    &--five {
+      background-image: url('../../img/partners/partners-5.png');
+      transition: 0.5s;
+    }
+
+    &--five:hover {
+      background-image: url('../../img/partners/client-logo5.png');
+    }
+
+
+
+    &--six {
+      background-image: url('../../img/partners/partners-6.png');
+      transition: 0.5s;
+    }
+
+    &--six:hover {
+      background-image: url('../../img/partners/client-logo6.png');
+    }
+
+    &--onenew {
+      background-image: url('../../img/partners/partners-7.png');
+      transition: 0.5s;
+    }
+
+    &--onenew:hover {
+      background-image: url('../../img/partners/client-logo7.png');
+    }
+
+    &--twonew {
+      background-image: url('../../img/partners/partners-8.png');
+      transition: 0.5s;
+    }
+
+    &--twonew:hover {
+      background-image: url('../../img/partners/client-logo8.png');
+    }
+
+
+    &--threenew {
+      background-image: url('../../img/partners/partners-9.png');
+      transition: 0.5s;
+    }
+
+    &--threenew:hover {
+      background-image: url('../../img/partners/client-logo9.png');
+    }
+
+
+
+    &--fournew {
+      background-image: url('../../img/partners/partners-10.png');
+      transition: 0.5s;
+    }
+
+    &--fournew:hover {
+      background-image: url('../../img/partners/client-logo10.png');
+    }
+
+
+
+    &--fivenew {
+      background-image: url('../../img/partners/partners-11.png');
+      transition: 0.5s;
+    }
+
+    &--fivenew:hover {
+      background-image: url('../../img/partners/client-logo11.png');
+    }
+
+
+
+    &--sixnew {
+      background-image: url('../../img/partners/partners-12.png');
+      transition: 0.5s;
+    }
+
+    &--sixnew:hover {
+      background-image: url('../../img/partners/client-logo12.png');
+    }
+
+  }
+}

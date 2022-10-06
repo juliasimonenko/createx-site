@@ -1,0 +1,37 @@
+.nav {
+  &__list {
+    @include flex-v-center;
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-right: 40px;
+    }
+  }
+
+  &__link {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 160%;
+    color: var(--gray-color);
+    transition: color 0.3s ease-in-out;
+
+    &:focus {
+      outline: 2px solid var(--accent-color);
+      outline-offset: 2px;
+    }
+
+    &:hover {
+      color: var(--accent-color);
+    }
+
+    &:active {
+      color: var(--active-color);
+    }
+  }
+
+  &__link--current {
+    color: var(--active-color);
+  }
+}

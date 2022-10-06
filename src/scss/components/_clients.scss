@@ -1,0 +1,86 @@
+.clients {
+  padding-top: 180px;
+  padding-bottom: 120px;
+  background-color: var(--light-color);
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 102px;
+  }
+
+  &__title {
+    margin-bottom: 60px;
+  }
+
+
+  &__item {
+    display: block;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 120px;
+    height: 64px;
+
+    &--one {
+      background-image: url('../../img/partners/partners-1.png');
+      transition: 0.5s;
+    }
+
+    &--one:hover {
+      background-image: url('../../img/partners/client-logo1.png');
+    }
+
+    &--two {
+      background-image: url('../../img/partners/partners-2.png');
+      transition: 0.5s;
+    }
+
+    &--two:hover {
+      background-image: url('../../img/partners/client-logo2.png');
+    }
+
+
+    &--three {
+      background-image: url('../../img/partners/partners-3.png');
+      transition: 0.5s;
+    }
+
+    &--three:hover {
+      background-image: url('../../img/partners/client-logo3.png');
+    }
+
+
+
+    &--four {
+      background-image: url('../../img/partners/partners-4.png');
+      transition: 0.5s;
+    }
+
+    &--four:hover {
+      background-image: url('../../img/partners/client-logo4.png');
+    }
+
+
+
+    &--five {
+      background-image: url('../../img/partners/partners-5.png');
+      transition: 0.5s;
+    }
+
+    &--five:hover {
+      background-image: url('../../img/partners/client-logo5.png');
+    }
+
+
+
+    &--six {
+      background-image: url('../../img/partners/partners-6.png');
+      transition: 0.5s;
+    }
+
+    &--six:hover {
+      background-image: url('../../img/partners/client-logo6.png');
+    }
+
+  }
+}

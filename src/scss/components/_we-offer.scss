@@ -1,0 +1,31 @@
+.we-offer {
+  padding: 120px 0;
+  background-color: var(--light-color);
+
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: var(--grid-gap);
+  }
+
+  &__image {
+    grid-column: 7 span;
+  }
+
+  &__content {
+    grid-column: 5 span;
+    padding-top: 5px;
+    padding-left: 75px;
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 60px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+    font-size: 46px;
+    line-height: 130%;
+  }
+
+}
+
