@@ -14,42 +14,21 @@
     @include flex-all-center
   }
 
-  // @include mobile {
-  //   padding-top: 40px;
-  //   padding-bottom: 40px;
-  // }
 }
 
 .services-list {
   display: grid;
   gap: var(--grid-gap);
-  grid-template-columns: repeat(4, 292px);
+  grid-template-columns: repeat(12, 1fr);
 
-
-
-  // &__item {
-  //   grid-column: 3 span;
-
-  //   @include tablet {
-  //     grid-column: 6 span;
-  //   }
-
-  //   @include mobile {
-  //     grid-column: 4 span;
-  //   }
-  // }
-
-  // @include mobile {
-  //   grid-template-columns: repeat(4, 1fr);
-  // }
+  &__item {
+    grid-column: 3 span;
+  }
 }
 
 .services-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   position: relative;
-
+  display: block;
   border: 1px solid #e5e8ed;
   border-radius: 4px;
   padding: 0 10px;
@@ -101,8 +80,10 @@
   }
 
   &__icon {
+    display: block;
+    margin: auto;
     margin-bottom: 23px;
-    // width: 52px;
+    width: 52px;
     height: 52px;
     fill: var(--accent-color);
     object-fit: cover;
@@ -118,9 +99,9 @@
     color: var(--dark-color);
     transition: color 0.3s ease-in-out;
 
-    // @include minidesk {
-    //   font-size: 18px;
-    // }
+    @include minidesk {
+      font-size: 18px;
+    }
   }
 
   &--construct {

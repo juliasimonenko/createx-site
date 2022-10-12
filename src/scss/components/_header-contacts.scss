@@ -31,6 +31,10 @@
     line-height: 150%;
     color: var(--dark-color);
     transition: color 0.3s ease-in-out;
+
+    @include minidesk {
+      font-size: 14px;
+    }
   }
 
   &:focus {

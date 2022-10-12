@@ -19,6 +19,10 @@
     transform: translateY(-50%);
     z-index: 60;
     background-color: var(--light-color);
+
+    @include big-desktop {
+      display: none !important;
+    }
   }
 
   &__prev {
@@ -28,6 +32,10 @@
     transform: translateY(-50%);
     z-index: 60;
     background-color: var(--light-color);
+
+    @include big-desktop {
+      display: none !important;
+    }
   }
 
   &__pag {

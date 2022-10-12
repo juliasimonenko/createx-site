@@ -9,7 +9,12 @@
   &__list {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    gap: 102px;
+    column-gap: 102px;
+    row-gap: 40px;
+
+    @include minidesk {
+      column-gap: 30px;
+    }
   }
 
   &__title {

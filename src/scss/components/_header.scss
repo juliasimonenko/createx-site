@@ -7,6 +7,10 @@
 
   &__nav {
     margin-left: -110px;
+
+    @include minidesk {
+      margin-left: 0;
+    }
   }
 
   &--main {
@@ -18,5 +22,11 @@
     left: 0;
     top: 0;
     width: 100%;
+  }
+}
+
+.logo {
+  @include minidesk {
+    max-width: 100px;
   }
 }
