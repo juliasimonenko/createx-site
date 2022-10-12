@@ -2,6 +2,7 @@
   padding: 120px 0;
   background-color: var(--light-color);
 
+
   &__top {
     display: flex;
     align-items: flex-end;
@@ -34,11 +35,10 @@
     border-radius: 4px;
     background: var(--light-color);
     box-shadow: var(--main-shadow);
-
-
     img {
       border-radius: 4px 4px 0px 0px;
     }
+
   }
 
   &__content {
@@ -68,12 +68,21 @@
   }
 
   &__btn {
-    display: none;
+    display: block;
     margin: 0;
-    margin-bottom: 24px;
+    margin-bottom: -50px;
     padding: 11px 24px;
+    transition: 0.3s ease-in-out;
+    will-change: margin;
   }
 }
 
 
-
+.portfolio-section__item {
+  transition: transform 0.3s ease-in-out;
+  &:hover {
+    .portfolio-section__btn {
+      margin-bottom: 24px;
+    }
+  }
+}
