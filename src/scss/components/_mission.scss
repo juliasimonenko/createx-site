@@ -33,7 +33,7 @@
         top: 0;
         width: 1px;
         height: 100%;
-        background-image: url('../../img/divider.svg');
+        background-image: url('../img/divider.svg');
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -41,23 +41,23 @@
     }
 
     &--quality {
-      background-image: url("../../img/quality.svg");
+      background-image: url("../img/quality.svg");
     }
     &--safety {
-      background-image: url("../../img/safety.svg");
+      background-image: url("../img/safety.svg");
     }
     &--comfort {
-      background-image: url("../../img/comfort.svg");
+      background-image: url("../img/comfort.svg");
     }
 
     &--training {
-      background-image: url("../../img/training.svg");
+      background-image: url("../img/training.svg");
     }
     &--growth {
-      background-image: url("../../img/growth.svg");
+      background-image: url("../img/growth.svg");
     }
     &--salary {
-      background-image: url("../../img/salary.svg");
+      background-image: url("../img/salary.svg");
     }
 
   }

@@ -1,7 +1,7 @@
 .achieve {
   padding-top: 120px;
   padding-bottom: 120px;
-  background-image: url('../../img/bg-image-achieve.png');
+  background-image: url('../img/bg-image-achieve.png');
   background-position: right bottom -350px;
   background-repeat: no-repeat;
   &__item {
@@ -14,16 +14,16 @@
     background-repeat: no-repeat;
 
     &--recome {
-      background-image: url('../../img/ic-like.svg');
+      background-image: url('../img/ic-like.svg');
     }
     &--renov {
-      background-image: url('../../img/renov.svg');
+      background-image: url('../img/renov.svg');
     }
     &--spec {
-      background-image: url('../../img/spec.svg');
+      background-image: url('../img/spec.svg');
     }
     &--finish {
-      background-image: url('../../img/finish.svg');
+      background-image: url('../img/finish.svg');
     }
   }
 
@@ -84,7 +84,7 @@
       top: 8px;
       width: 28px;
       height: 20px;
-      background-image: url('../../img/braces.svg');
+      background-image: url('../img/braces.svg');
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
@@ -109,7 +109,7 @@
     font-size: 14px;
     line-height: 150%;
     color: var(--storm-color);
-    background-image: url('../../img/signature.svg');
+    background-image: url('../img/signature.svg');
     background-repeat: no-repeat;
     background-size: 100px 68px;
     background-position: right 65px center;

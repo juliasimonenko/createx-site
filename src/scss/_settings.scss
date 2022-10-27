@@ -406,11 +406,18 @@ a {
     &:hover {
       background-color: var(--active-color);
     }
+
+
   }
 
   &--active {
     opacity: 1;
     visibility: visible;
+  }
+
+  @include big-desktop {
+    right: 20px;
+    bottom: 20px;
   }
 }
 
@@ -507,7 +514,7 @@ a {
     right: 19px;
     width: 13px;
     height: 7.5px;
-    background-image: url('../../img/arrow-down.svg');
+    background-image: url('../img/arrow-down.svg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;

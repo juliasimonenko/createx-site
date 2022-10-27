@@ -49,37 +49,37 @@
   }
 
   &--services {
-    background-image: url('../../img/services-hero-bg.png');
+    background-image: url('../img/services-hero-bg.png');
   }
 
   &--services-inner {
-    background-image: url('../../img/services-inner-hero-bg.png');
+    background-image: url('../img/services-inner-hero-bg.png');
   }
 
   &--work {
-    background-image: url('../../img/our-work.png');
+    background-image: url('../img/our-work.png');
   }
 
   &--work-1 {
     background-color: var(--light-color);
-    background-image: url('../../img/work-1-bg.png');
+    background-image: url('../img/work-1-bg.png');
     background-position: right -8px top 48px;
   }
 
   &--about {
-    background-image: url('../../img/about-bg.png');
+    background-image: url('../img/about-bg.png');
   }
 
   &--positions {
-    background-image: url('../../img/positions-bg.png');
+    background-image: url('../img/positions-bg.png');
     background-position: right bottom;
   }
 
   &--news {
-    background-image: url('../../img/news-bg.png');
+    background-image: url('../img/news-bg.png');
   }
   &--contacts {
-    background-image: url('../../img/contacts-bg.png');
+    background-image: url('../img/contacts-bg.png');
   }
 
   &__bottom {
@@ -120,7 +120,7 @@
 
     time.article-meta__item {
       padding-left: 28px;
-      background-image: url('../../img/time.svg');
+      background-image: url('../img/time.svg');
       background-repeat: no-repeat;
       background-position: left center;
       background-size: 20px 20px;

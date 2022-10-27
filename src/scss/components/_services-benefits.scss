@@ -33,7 +33,7 @@
         top: 0;
         width: 1px;
         height: 100%;
-        background-image: url('../../img/divider.svg');
+        background-image: url('../img/divider.svg');
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -41,13 +41,13 @@
     }
 
     &--terms {
-      background-image: url("../../img/terms.svg");
+      background-image: url("../img/terms.svg");
     }
     &--work {
-      background-image: url("../../img/work.svg");
+      background-image: url("../img/work.svg");
     }
     &--control {
-      background-image: url("../../img/control.svg");
+      background-image: url("../img/control.svg");
     }
   }
 

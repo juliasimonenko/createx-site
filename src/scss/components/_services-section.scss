@@ -1,7 +1,7 @@
 .services-section {
   padding-top: 212px;
   padding-bottom: 80px;
-  background-image: url("../../img/services-background.jpg");
+  background-image: url("../img/services-background.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -49,7 +49,7 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url('../../img/services1.jpg');
+    background-image: url('../img/services1.jpg');
     background-color: var(--dark-color);
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
@@ -106,17 +106,17 @@
 
   &--construct {
     &::before {
-      background-image: url("../../img/section3.jpg");
+      background-image: url("../img/section3.jpg");
     }
   }
   &--development {
     &::before {
-      background-image: url("../../img/section2.jpg");
+      background-image: url("../img/section2.jpg");
     }
   }
   &--interior {
     &::before {
-      background-image: url("../../img/section4.jpg");
+      background-image: url("../img/section4.jpg");
     }
   }
 
