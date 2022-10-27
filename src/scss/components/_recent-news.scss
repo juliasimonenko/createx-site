@@ -3,8 +3,16 @@
   padding-bottom: 120px;
   background-color: var(--light-color);
 
+  @include mobile {
+    padding-top: 30px;
+  }
+
   &__title {
     margin-bottom: 60px;
+
+    @include mobile {
+      margin-bottom: 35px;
+    }
   }
 
   &__list {
@@ -13,6 +21,14 @@
     margin-bottom: 80px;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(2, 255px);
+
+    @include tablet {
+      grid-template-rows: initial;
+    }
+
+    @include mobile {
+      grid-template-columns: repeat(4, 1fr);
+    }
   }
 
   &__item {
@@ -20,6 +36,23 @@
     &:first-child {
       grid-column: 7 span;
       grid-row: 2 span;
+
+      @include tablet {
+        grid-column: 12 span;
+        grid-row: 1 span;
+      }
+
+      @include mobile {
+        grid-column: 4 span;
+      }
+    }
+
+    @include tablet {
+      grid-column: 12 span;
+    }
+
+    @include mobile {
+      grid-column: 4 span;
     }
   }
 }

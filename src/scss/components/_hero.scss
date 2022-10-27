@@ -1,13 +1,23 @@
 .hero {
-
+  background-color: var(--athens-color);
   &__content {
     max-width: 577px;
   }
 
   &__btns {
+    @include mobile {
+      display: flex;
+      flex-direction: column;
+    }
+
     .btn {
       &:not(:last-child) {
         margin-right: 20px;
+
+        @include mobile {
+          margin-right: 0;
+          margin-bottom: 20px;
+        }
       }
     }
   }
@@ -67,6 +77,27 @@
       &::after {
         display: none;
       }
+
+      @include small-tablet {
+      width: 125px;
+      }
+    }
+
+
+    @include big-desktop {
+      left: 3% !important;
+    }
+
+    @include minidesk {
+      left: 15px !important;
+    }
+
+    @include small-tablet {
+      bottom: 30px !important;
+      }
+
+    @include mobile {
+      display: none;
     }
   }
 
@@ -114,38 +145,34 @@
 }
 
 .hero-slide {
+  padding-top: 220px;
+  padding-bottom: 354px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
   &--one {
-    padding-top: 220px;
-    padding-bottom: 354px;
     background-image: url('../img/hero-bg.jpg');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
   }
 
   &--two {
-    padding-top: 220px;
-    padding-bottom: 354px;
     background-image: url('../img/slide2.jpg');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+  }
 
-  }
   &--three {
-    padding-top: 220px;
-    padding-bottom: 354px;
     background-image: url('../img/slide3.jpg');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
   }
+
   &--four {
-    padding-top: 220px;
-    padding-bottom: 354px;
     background-image: url('../img/slide4.jpg');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+  }
+
+  @include small-tablet {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+
+  @include mobile {
+    padding: 100px 0;
   }
 }

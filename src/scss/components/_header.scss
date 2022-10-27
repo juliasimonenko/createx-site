@@ -11,6 +11,10 @@
     @include minidesk {
       margin-left: 0;
     }
+
+    @include tablet {
+      display: none;
+    }
   }
 
   &--main {
@@ -28,5 +32,9 @@
 .logo {
   @include minidesk {
     max-width: 100px;
+  }
+
+  @include tablet {
+    max-width: none;
   }
 }

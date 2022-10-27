@@ -34,6 +34,10 @@
 
   &__form {
     grid-column: 5 span;
+
+    @include small-tablet {
+      grid-column: 9 span;
+    }
   }
 
   &__address {
@@ -166,6 +170,10 @@
   &__col {
     &:not(:last-child) {
       margin-right: 124px;
+
+      @include small-tablet {
+        margin-right: 65px;
+      }
     }
   }
 
@@ -196,5 +204,9 @@
     &:active {
       color: var(--light-color);
     }
+  }
+
+  @include small-tablet {
+    padding-left: 24px;
   }
 }

@@ -54,6 +54,10 @@
         color: var(--light-color);
       }
     }
+
+    @include small-tablet {
+      margin-bottom: 0;
+    }
   }
 
   &__icon {

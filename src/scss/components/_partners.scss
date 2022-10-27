@@ -6,6 +6,10 @@
     background-color: var(--light-color);
   }
 
+  @include mobile {
+    padding: 55px 0;
+  }
+
   &__list {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
@@ -15,15 +19,32 @@
     @include minidesk {
       column-gap: 30px;
     }
+
+    @include tablet {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    @include mobile {
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 21px;
+    }
   }
 
   &__title {
     margin-bottom: 60px;
+
+    @include tablet {
+      font-size: 40px;
+    }
+
+    @include mobile {
+      font-size: 30px;
+    }
   }
 
 
   &__item {
-    display: block;
+    margin: 0 auto;
     background-size: cover;
     background-repeat: no-repeat;
     width: 120px;

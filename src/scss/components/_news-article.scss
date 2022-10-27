@@ -7,6 +7,10 @@
 
   &__text {
     padding: 20px 24px;
+
+    @include mobile {
+      padding: 20px 10px;
+    }
   }
 
   &__title {
@@ -20,6 +24,17 @@
     font-size: 16px;
     line-height: 160%;
     color: var(--gray-color);
+
+    @include mobile {
+      font-size: 13px;
+    }
+  }
+
+  .image {
+    @include tablet {
+      width: 100%;
+      object-fit: cover;
+    }
   }
 
   &__meta {
@@ -45,6 +60,10 @@
 
     &:active {
       color: var(--active-color);
+    }
+
+    @include mobile {
+      font-size: 16px;
     }
   }
 
@@ -75,8 +94,6 @@
     position: relative;
     color: inherit;
 
-
-
     &:not(:last-child) {
       margin-right: 21px;
 
@@ -89,6 +106,16 @@
         height: 11px;
         color: inherit;
         background-color: currentColor;
+
+        @include mobile {
+          right: -7px;
+          top: 4px;
+          height: 9px;
+        }
+      }
+
+      @include mobile {
+        margin-right: 10px;
       }
     }
 

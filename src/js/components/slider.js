@@ -4,7 +4,7 @@ Swiper.use([Navigation, Scrollbar, Pagination]);
 Swiper.use([Thumbs, Autoplay]);
 
 const swiper = new Swiper('.portfolio-section__slider', {
-  slidesPerView: 3,
+  slidesPerView: 1,
   spaceBetween: 30,
   loop: true,
   scrollbar: {
@@ -14,6 +14,14 @@ const swiper = new Swiper('.portfolio-section__slider', {
   navigation: {
     nextEl: '.portfolio-section__next',
     prevEl: '.portfolio-section__prev',
+  },
+  breakpoints: {
+    576: {
+      slidesPerView: 2,
+    },
+    768: {
+      slidesPerView: 3,
+    },
   },
 });
 

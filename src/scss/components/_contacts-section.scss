@@ -31,6 +31,9 @@
     0 12px 10px -6px rgba(30, 33, 44, 0.08),
     0 4px 4px -4px rgba(30, 33, 44, 0.05);
 
+    @include mobile {
+      padding: 30px 14px;
+    }
 
   &__title {
     margin: 0;
@@ -41,6 +44,10 @@
     line-height: 150%;
     text-align: center;
     color: --dark-color;
+
+    @include mobile {
+      font-size: 23px;
+    }
   }
 
   &__checkbox {

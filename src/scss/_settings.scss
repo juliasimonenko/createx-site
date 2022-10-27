@@ -125,6 +125,16 @@ a {
   &--home {
     color: var(--light-color);
   }
+
+  @include small-tablet {
+    font-size: 60px;
+    line-height: 75px;
+  }
+
+  @include mobile {
+    font-size: 36px;
+    line-height: 53px;
+  }
 }
 
 .main-descr {
@@ -137,6 +147,11 @@ a {
   &--home {
     margin-bottom: 60px;
     color: var(--light-color);
+  }
+
+  @include mobile {
+    font-size: 15px;
+    line-height: 23px;
   }
 }
 
@@ -226,6 +241,14 @@ a {
   &--center {
     text-align: center;
   }
+
+  @include small-tablet {
+    font-size: 33px;
+  }
+
+  @include mobile {
+    font-size: 30px;
+  }
 }
 
 .descr {
@@ -239,10 +262,24 @@ a {
   &--center {
     text-align: center;
   }
+
+  @include mobile {
+    margin-bottom: 25px;
+    font-size: 15px;
+    line-height: 24px;
+  }
 }
 
 .section-offset {
   padding-top: 120px;
+
+  @include small-tablet {
+    padding-top: 60px;
+  }
+
+  @include mobile {
+    padding-top: 40px;
+  }
 }
 
 
@@ -543,4 +580,14 @@ a {
   .choices__list--dropdown {
     background-color: var(--athens-color);
   }
+}
+
+.burger {
+  display: none;
+  @include tablet {
+    display: block;
+  }
+
+  @include burger
+
 }
