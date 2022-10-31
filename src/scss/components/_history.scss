@@ -2,6 +2,23 @@
   padding-top: 180px;
   padding-bottom: 100px;
   background-color: var(--athens-color);
+
+  @include minidesk {
+    padding-top: 90px;
+    padding-bottom: 90px;
+  }
+
+  @include small-tablet {
+    padding-top: 35px;
+    padding-bottom: 15px;
+  }
+
+  &__content {
+    @include small-tablet {
+      display: block;
+    }
+  }
+
   &__top {
     display: flex;
     align-items: flex-end;
@@ -18,8 +35,8 @@
     padding-bottom: 12px;
     max-width: 710px;
   }
+
   &__slider {
-    // margin: 0 -30px -21px;
     padding: 0 30px 100px;
   }
 
@@ -42,6 +59,10 @@
 .history-nav {
   position: relative;
   grid-column: 4 span;
+
+  @include small-tablet {
+    display: none;
+  }
 
   &::before {
     content: '';
@@ -68,6 +89,10 @@
     color: #9a9ca5;
     transition: color 0.3s ease-in-out;
 
+    @include tablet {
+      font-size: 22px;
+    }
+
     &::before {
       content: '';
       position: absolute;
@@ -77,6 +102,7 @@
       height: 16px;
       background-color: var(--athens-color);
     }
+
     &::after {
       content: '';
       position: absolute;

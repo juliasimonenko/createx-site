@@ -2,10 +2,19 @@
   padding-top: 54px;
   padding-bottom: 120px;
 
+  @include minidesk {
+    padding-top: 10px;
+  }
+
   &__list {
     column-gap: var(--grid-gap);
     margin-bottom: 80px;
     row-gap: 60px;
+
+
+    @include small-tablet {
+      grid-template-columns: repeat(6, 1fr);
+    }
   }
 
   &__item {
@@ -41,7 +50,10 @@
     position: relative;
     margin-bottom: 12px;
     font-size: 0;
-    width: 285px;
+
+    @include small-tablet {
+     text-align: center;
+    }
   }
 
   &__socials {

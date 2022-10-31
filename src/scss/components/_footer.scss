@@ -3,24 +3,55 @@
   color: rgba(255, 255, 255, 0.6);
   background-color: var(--dark-color);
 
+  @include mobile {
+    padding: 60px 0;
+  }
+
   &__container {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     gap: var(--grid-gap);
+
+    @include mobile {
+      grid-template-columns: repeat(4, 1fr);
+    }
   }
+
+  &__social {
+    @include mobile {
+      .social__item:not(:last-child) {
+        margin-right: 25px !important;
+      }
+
+    }
+  }
+
 
   &__left {
     grid-column: 7 span;
+
+    @include mobile {
+      grid-column: 4 span;
+    }
   }
 
   &__logo {
     margin-right: 60px;
+
+    @include mobile {
+      margin: 0;
+      margin-bottom: 30px;
+    }
   }
 
   &__top {
     @include flex-v-center;
 
     margin-bottom: 22px;
+
+    @include mobile {
+      flex-direction: column;
+    }
   }
 
   &__descr {
@@ -30,6 +61,12 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 150%;
+
+    @include mobile {
+      font-size: 12px;
+      line-height: 24px;
+      text-align: center;
+    }
   }
 
   &__form {
@@ -37,6 +74,10 @@
 
     @include small-tablet {
       grid-column: 9 span;
+    }
+
+    @include mobile {
+      grid-column: 4 span;
     }
   }
 
@@ -46,6 +87,10 @@
 
   &__nav {
     grid-column: 8 span;
+
+    @include mobile {
+      grid-column: 4 span;
+    }
   }
 
   &__copyright {
@@ -63,6 +108,15 @@
       background-repeat: no-repeat;
       background-position: 2px center;
     }
+
+    @include mobile {
+      grid-column: 4 span;
+    }
+
+    @include mobile {
+      font-size: 11px;
+      text-align: center;
+    }
   }
 }
 
@@ -75,6 +129,12 @@
     font-size: 24px;
     line-height: 150%;
     color: var(--light-color);
+
+    @include mobile {
+      font-size: 22px;
+      line-height: 34px;
+      text-align: center;
+    }
   }
 
   &__items {
@@ -86,6 +146,8 @@
   .form-field {
     margin: 0;
   }
+
+
 
   .form-field__input {
     background: rgba(255, 255, 255, 0.12);
@@ -108,6 +170,10 @@
     font-weight: 400;
     font-size: 12px;
     line-height: 150%;
+
+    @include mobile {
+      font-size: 9px;
+    }
   }
 }
 
@@ -120,6 +186,10 @@
   letter-spacing: 1px;
   text-transform: uppercase;
   color: var(--light-color);
+
+  @include mobile {
+    font-size: 14px;
+  }
 }
 
 .footer-address {
@@ -154,10 +224,18 @@
         color: var(--light-color);
       }
     }
+
+    @include mobile {
+      font-size: 13px;
+    }
   }
 
   &__name {
     color: var(--light-color);
+
+    @include mobile {
+      font-size: 13px;
+    }
   }
 }
 
@@ -167,12 +245,17 @@
   padding-top: 20px;
   padding-left: 54px;
 
+
   &__col {
     &:not(:last-child) {
       margin-right: 124px;
 
       @include small-tablet {
         margin-right: 65px;
+      }
+
+      @include mobile {
+        margin-right: 30px;
       }
     }
   }
@@ -204,9 +287,18 @@
     &:active {
       color: var(--light-color);
     }
+
+    @include mobile {
+      font-size: 13px;
+    }
   }
 
   @include small-tablet {
     padding-left: 24px;
   }
+
+  @include mobile {
+    padding-left: 4px;
+  }
+
 }

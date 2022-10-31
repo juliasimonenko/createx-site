@@ -6,11 +6,26 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+
+    @include tablet {
+      display: block;
+      text-align: center;
+    }
   }
 
   &__image {
     flex-shrink: 0;
     margin-right: 20px;
+
+    @include minidesk {
+      flex-shrink: 1;
+    }
+
+    @include tablet {
+      display: block;
+      margin-right: 0;
+      margin-bottom: 30px;
+    }
   }
 }
 
@@ -18,7 +33,11 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  max-width: 600px;
+  width: 600px;
+
+  @include tablet {
+    width: 100%;
+  }
 
   &__field {
     width: 47.5%;
@@ -27,6 +46,14 @@
     &:not(:last-child) {
       margin-bottom: 24px;
     }
+
+    @include mobile {
+      width: 100%;
+    }
+  }
+
+  .post-form__field--big {
+    width: 100%;
   }
 
   &__radio {
@@ -52,6 +79,11 @@
     .form-field__caption {
       margin-bottom: 21px;
     }
+
+    @include mobile {
+      margin-bottom: 30px;
+      width: 100%;
+    }
   }
 
   &__bottom {
@@ -60,6 +92,10 @@
     justify-content: space-between;
     width: 600px;
     padding-top: 39px;
+
+    @include mobile {
+      display: block;
+    }
   }
 
   &__checkbox {
@@ -69,6 +105,10 @@
       font-weight: 400;
       font-size: 16px;
       line-height: 160%;
+
+      @include mobile {
+        margin-bottom: 20px;
+      }
     }
   }
 
@@ -140,6 +180,6 @@
 
 .contact-form .form-field__input--big {
   margin: 0;
-  width: 600px;
+  width: 100%;
   height: 126px;
 }

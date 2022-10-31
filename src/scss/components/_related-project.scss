@@ -55,6 +55,10 @@
     font-size: 20px;
     line-height: 150%;
     color: var(--dark-color);
+
+    @include minidesk {
+      font-size: 18px;
+    }
   }
 
   &__card {

@@ -2,20 +2,38 @@
   padding: 120px 0;
   background-color: var(--light-color);
 
+  @include tablet {
+    padding: 60px 0;
+  }
+
   &__container {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     gap: var(--grid-gap);
+
+    @include tablet {
+      display: block;
+    }
   }
 
   &__image {
     grid-column: 7 span;
+
+    @include tablet {
+      display: block;
+      text-align: center;
+    }
   }
 
   &__content {
     grid-column: 5 span;
     padding-top: 5px;
     padding-left: 75px;
+
+    @include tablet {
+      padding-top: 30px;
+      padding-left: 10px;
+    }
   }
 
   &__title {

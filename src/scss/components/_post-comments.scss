@@ -11,4 +11,8 @@
       margin-bottom: 60px;
     }
   }
+
+  @include mobile {
+    padding-bottom: 20px;
+  }
 }

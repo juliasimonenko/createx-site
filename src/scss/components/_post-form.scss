@@ -10,6 +10,10 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+
+    @include mobile {
+      display: block;
+    }
   }
 
   .form-field__caption {
@@ -34,5 +38,13 @@
         height: 100px;
       }
     }
+
+    @include mobile {
+      width: 100%;
+    }
+  }
+
+  @include mobile {
+    padding-bottom: 50px;
   }
 }

@@ -4,6 +4,16 @@
   background-image: url('../img/bg-image-achieve.png');
   background-position: right bottom -350px;
   background-repeat: no-repeat;
+
+  @include minidesk {
+    padding-top: 90px;
+    padding-bottom: 1px;
+  }
+
+  @include mobile {
+    padding-top: 60px;
+  }
+
   &__item {
     @include flex-column-center;
 
@@ -25,7 +35,12 @@
     &--finish {
       background-image: url('../img/finish.svg');
     }
+
+    @include mobile {
+      grid-column: 6 span;
+    }
   }
+
 
   &__value {
     margin-bottom: 10px;
@@ -34,6 +49,10 @@
     line-height: 130%;
     color: var(--accent-color);
 
+    @include minidesk {
+      font-size: 28px;
+      line-height: 50px;
+    }
   }
 
   &__text {
@@ -46,11 +65,28 @@
 
   &__list {
     margin-bottom: 260px;
+
+    @include minidesk {
+      margin-bottom: 120px;
+    }
+
+    @include tablet {
+      grid-template-columns: repeat(6, 1fr);
+    }
+
+    @include mobile {
+      margin-bottom: 60px;
+    }
   }
 
   &__content {
     display: flex;
     align-items: flex-start;
+
+    @include tablet {
+      display: block;
+      padding: 20px 20px;
+    }
   }
 
 
@@ -67,6 +103,22 @@
     width: 735px;
     box-shadow: var(--main-shadow);
     background: var(--light-color);
+
+    @include minidesk {
+      width: 60%;
+      padding: 27px 27px;
+      top: -52px;
+    }
+
+    @include tablet {
+      width: 100%;
+    }
+
+    @include mobile {
+      padding: 15px;
+      left: 0;
+      top: 0;
+    }
   }
 }
 
@@ -76,6 +128,17 @@
     position: relative;
     margin-bottom: 32px;
     padding: 9px 53px;
+
+    @include minidesk {
+      margin-bottom: 10px;
+      padding: 8px 38px;
+    }
+
+    @include mobile {
+      padding: 0;
+      padding-top: 40px;
+      padding-bottom: 20px;
+    }
 
     &::before {
       content: '';
@@ -100,6 +163,19 @@
       &:not(:last-child) {
         margin-bottom: 30px;
       }
+
+      @include tablet {
+        font-size: 17px;
+      }
+
+      @include mobile {
+        font-size: 15px;
+        line-height: 26px;
+
+        &:not(:last-child) {
+          margin-bottom: 15px;
+        }
+      }
     }
   }
 
@@ -113,6 +189,12 @@
     background-repeat: no-repeat;
     background-size: 100px 68px;
     background-position: right 65px center;
+
+    @include mobile {
+      padding: 0;
+      padding-bottom: 90px;
+      background-position: bottom center;
+    }
   }
 
   &__author {

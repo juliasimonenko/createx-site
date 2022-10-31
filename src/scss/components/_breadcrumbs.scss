@@ -42,4 +42,8 @@
       color: var(--accent-color);
     }
   }
+
+  @include small-tablet {
+    flex-wrap: wrap;
+  }
 }

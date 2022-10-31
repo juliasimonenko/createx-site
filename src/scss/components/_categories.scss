@@ -5,6 +5,11 @@
   &__title {
     margin-bottom: 40px;
   }
+
+  @include mobile {
+    padding-top: 60px;
+    padding-bottom: 50px;
+  }
 }
 
 .categories-nav {
@@ -12,8 +17,17 @@
   align-items: center;
   margin-bottom: 60px;
 
+
   &__item {
     width: calc(100% / 6);
+
+    @include tablet {
+      width: calc(100% / 3);
+    }
+
+    @include mobile {
+      width: 100%;
+    }
   }
 
   &__btn {
@@ -36,13 +50,17 @@
       color: var(--accent-color);
     }
   }
+
+  @include tablet {
+    flex-wrap: wrap;
+  }
 }
 
 .categories-list {
   column-gap: var(--grid-gap);
   row-gap: 60px;
   margin-bottom: 60px;
-  
+
   &__item {
     grid-column: 6 span;
   }
@@ -50,6 +68,14 @@
   .news-article__descr {
     height: 52px;
     overflow: hidden;
+
+    @include tablet {
+      height: auto;
+    }
+  }
+
+  @include tablet {
+    grid-template-columns: repeat(6, 1fr);
   }
 }
 

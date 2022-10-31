@@ -11,6 +11,14 @@
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     gap: var(--grid-gap);
+
+    @include tablet {
+      grid-template-columns: repeat(6, 1fr);
+    }
+
+    @include mobile {
+      grid-template-columns: repeat(3, 1fr);
+    }
   }
 
   &__item {

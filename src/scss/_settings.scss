@@ -273,6 +273,11 @@ a {
 .section-offset {
   padding-top: 120px;
 
+
+  @include minidesk {
+    padding-top: 90px;
+  }
+
   @include small-tablet {
     padding-top: 60px;
   }

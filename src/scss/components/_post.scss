@@ -36,6 +36,11 @@
       font-size: 20px;
       line-height: 150%;
       color: var(--dark-color);
+
+      @include mobile {
+        font-size: 15px;
+        line-height: 23px;
+      }
     }
 
     h3 {
@@ -70,6 +75,13 @@
       line-height: 150%;
       color: var(--dark-color);
 
+      @include mobile {
+        padding-left: 10px;
+        font-size: 18px;
+        line-height: 30px;
+        margin-bottom: 35px;
+      }
+
       &::before {
         content: "";
         position: absolute;
@@ -81,6 +93,10 @@
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
+
+        @include mobile {
+          top: -14px;
+        }
       }
     }
 
@@ -115,6 +131,10 @@
           background-position: center;
         }
       }
+    }
+
+    @include mobile {
+      padding: 30px 0;
     }
   }
 
