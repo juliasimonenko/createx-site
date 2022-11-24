@@ -5,7 +5,10 @@
   --burger-height: 30px;
   --burger-line-height: 2px;
 
-  position: relative;
+  position: absolute;
+  right: 15px;
+  top: 23px;
+  z-index: 1000;
   border: none;
   padding: 0;
   width: var(--burger-width);

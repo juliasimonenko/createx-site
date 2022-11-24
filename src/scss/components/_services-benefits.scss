@@ -100,5 +100,9 @@
   &__btn {
     width: 390px;
     transform: translateY(13px);
+
+    @include small-tablet {
+      width: auto;
+    }
   }
 }

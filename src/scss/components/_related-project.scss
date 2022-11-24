@@ -8,10 +8,20 @@
     align-items: flex-end;
     justify-content: space-between;
     margin-bottom: 60px;
+
+    @include mobile {
+      display: block;
+      text-align: center;
+      margin-bottom: 30px;
+    }
   }
 
   &__slider-nav {
     transform: translateX(12px);
+
+    @include mobile {
+      transform: none;
+    }
   }
 
   &__title {
@@ -59,6 +69,10 @@
     @include minidesk {
       font-size: 18px;
     }
+
+    @include tablet {
+      font-size: 13px;
+    }
   }
 
   &__card {
@@ -70,6 +84,10 @@
     font-size: 14px;
     line-height: 150%;
     color: var(--gray-color);
+
+    @include small-tablet {
+      font-size: 13px;
+    }
   }
 
   &__btn {
@@ -78,6 +96,11 @@
     margin-bottom: 24px;
     padding: 11px 24px;
   }
+
+  @include tablet {
+    padding: 80px 0;
+  }
+
 }
 
 

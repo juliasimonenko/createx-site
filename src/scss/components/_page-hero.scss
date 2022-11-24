@@ -81,6 +81,10 @@
     background-color: var(--light-color);
     background-image: url('../img/work-1-bg.png');
     background-position: right -8px top 48px;
+
+    @include mobile {
+      padding-bottom: 20px;
+    }
   }
 
   &--about {

@@ -83,6 +83,10 @@
     font-size: 20px;
     line-height: 150%;
     color: var(--dark-color);
+
+    @include tablet {
+      font-size: 13px;
+    }
   }
 
   &__card {
@@ -103,6 +107,11 @@
     padding: 11px 24px;
     transition: 0.3s ease-in-out;
     will-change: margin;
+
+    @include small-tablet {
+      padding: 10px 10px;
+      font-size: 13px;
+    }
   }
 }
 

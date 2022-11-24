@@ -23,6 +23,10 @@
   background: var(--light-color);
   width: 100%;
   box-shadow: var(--main-shadow);
+
+  @include small-tablet {
+    overflow-x: auto;
+  }
 }
 
 .table {
@@ -116,6 +120,10 @@
     font-size: 18px;
     line-height: 150%;
     color: var(--storm-color);
+  }
+
+  @include small-tablet {
+    width: 1200px;
   }
 
 }

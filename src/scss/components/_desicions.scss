@@ -8,16 +8,36 @@
 
     img {
       margin-bottom: -142px;
+
+      @include tablet {
+        margin-bottom: 60px;
+      }
+    }
+
+    @include tablet {
+      text-align: center;
     }
   }
 
   &__right {
     grid-column: 7 span;
     padding-left: 104px;
+
+    @include small-tablet {
+      padding-left: 30px;
+    }
+
+    @include mobile {
+      padding-left: 10px;
+    }
   }
 
   &__title {
     margin-bottom: 60px;
+
+    @include tablet {
+      margin-bottom: 30px;
+    }
   }
 
   &__item {
@@ -46,4 +66,11 @@
     }
 
   }
+
+  &__container {
+    @include tablet {
+      display: block;
+    }
+  }
+
 }

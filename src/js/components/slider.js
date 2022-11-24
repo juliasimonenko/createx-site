@@ -36,7 +36,7 @@ const swiper2 = new Swiper('.testimonials__slider', {
 });
 
 const swiper3 = new Swiper('.related-project__slider', {
-  slidesPerView: 3,
+  slidesPerView: 1,
   spaceBetween: 30,
   loop: true,
   scrollbar: {
@@ -46,6 +46,14 @@ const swiper3 = new Swiper('.related-project__slider', {
   navigation: {
     nextEl: '.related-project__next',
     prevEl: '.related-project__prev',
+  },
+  breakpoints: {
+    576: {
+      slidesPerView: 2,
+    },
+    768: {
+      slidesPerView: 3,
+    },
   },
 });
 
